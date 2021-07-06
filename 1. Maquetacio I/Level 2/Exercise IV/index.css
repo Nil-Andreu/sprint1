@@ -94,4 +94,14 @@
 .articles {
     background-color: rgb(212, 212, 212);
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articles .articles_card {
+    width: 40vw;
+    height: 30vh;
 }
