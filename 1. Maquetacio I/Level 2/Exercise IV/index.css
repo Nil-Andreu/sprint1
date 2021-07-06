@@ -63,3 +63,35 @@
 .navbar .navbar_social {
     width: 10vw;
 }
+
+/* Do web responsiveness
+@media ()
+*/
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.img .img_image {
+    width: 100vw;
+    object-fit: cover;
+    height: 50vh;
+    object-position: 50% 60%;
+}
+
+.img .img_title {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 30%;
+    right: auto;
+    color: rgba(255, 95, 2, 0.6)
+}
+
+.articles {
+    background-color: rgb(212, 212, 212);
+    margin-top: 10px;
+}
