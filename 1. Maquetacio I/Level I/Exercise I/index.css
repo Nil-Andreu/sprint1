@@ -67,37 +67,34 @@
     height: 40vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .second .second_blue {
     background-color: gray;
-    width: 60%;
+    width: 62%;
     height: 85%;
-    grid-gap: 5%;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 30% 30% 30%;
+    display: flex;
+    flex-direction: row;
+    /* We put the wrap style to let elements wrap */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .second .second_blue .second_blue--dark {
-    
+    background-color: blue;
+    margin: 1vw;
+    width: 28vw;
+    height: 5vh;
 }
-
-.second .second_blue .second_blue--dark div {
-    
-} 
 
 .second .second_blue .second_blue--light {
-    background-color: aqua;
-    height: 70%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.second .second_blue .second_blue--light div {
-    width: 90%;
-    height: auto;
+    background-color: aqua;
+    margin: 1rem;
+    width: 58vw;
+    height: 5vh;
 }
 
 .second .second_red {
