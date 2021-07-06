@@ -131,25 +131,15 @@
 @media (min-width: 1024px) {
   .first {
     height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .second {
     height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
+
   .second .second_blue {
     background-color: gray;
     width: 62%;
     height: 85%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
   }
 
@@ -157,26 +147,20 @@
     background-color: blue;
     margin: 1vw;
     width: 28vw;
-    height: 5vh;
   }
 
   .second .second_blue .second_blue--light {
     display: flex;
-    background-color: aqua;
     margin: 0 1rem 1rem 1rem;
     width: 58vw;
     height: 5vh;
   }
 
   .second .second_red {
-    background-color: red;
     width: 32%;
     margin-left: 2%;
     height: 85%;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
   }
 
   .second .second_blue .second_blue--dark {
