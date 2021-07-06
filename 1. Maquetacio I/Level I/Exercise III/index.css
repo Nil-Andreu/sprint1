@@ -19,7 +19,7 @@
 }
 
 .first {
-  height: 25vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,24 +30,18 @@
 .first .first_red {
   background-color: gray;
   display: flex;
+  flex-direction: column;
   margin: 0 0 2vh 0;
   justify-content: space-around;
   align-items: center;
-  width: 96%;
-  height: 10vh;
+  width: 92%;
+  height: 16vh;
 }
 
-.first .first_red div:nth-child(1),
-.first .first_red div:nth-child(3) {
+.first .first_red div {
   background-color: red;
-  width: 15vw;
-  height: 30%;
-}
-
-.first .first_red div:nth-child(2) {
-  background-color: red;
-  width: 50vw;
-  height: 30%;
+  width: 86%;
+  height: 3vh;
 }
 
 .first .first_orange {
@@ -55,17 +49,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 96%;
-  height: 10vh;
+  width: 92%;
+  height: 8vh;
 }
 
 .first .first_orange div {
-  width: 96%;
+  width: 86%;
   background: yellow;
   height: 30%;
 }
 .second {
-  height: 55vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -75,7 +69,7 @@
 
 .second .second_blue {
   background-color: gray;
-  width: 95%;
+  width: 92%;
   height: 50%;
   display: flex;
   flex-direction: row;
@@ -87,19 +81,19 @@
 
 .second .second_blue .second_blue--dark {
   background-color: blue;
-  width: 43vw;
-  height: 5vh;
+  width: 86%;
+  height: 3vh;
 }
 
 .second .second_blue .second_blue--light {
   background-color: aqua;
-  width: 90vw;
-  height: 5vh;
+  width: 86%;
+  height: 3vh;
 }
 
 .second .second_red {
   background-color: red;
-  width: 95%;
+  width: 92%;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -109,12 +103,12 @@
 
 .second .second_red div {
   background-color: yellow;
-  width: 90vw;
-  height: 5vh;
+  width: 86%;
+  height: 3vh;
 }
 
 .last {
-  height: 10vh;
+  height: 5vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -122,9 +116,111 @@
 }
 
 .last .last_yellow {
-  width: 96%;
-  height: 50%;
+  width: 92%;
+  height: 3vh;
   background-color: yellow;
+}
+
+@media (min-width: 780px) and (max-width: 1023px) {
+  .first {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Going to stablish the the borders by having the widht of the inside element in % */
+  .first .first_red {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 2vh 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    height: 10vh;
+  }
+
+  .first .first_red div:nth-child(1),
+  .first .first_red div:nth-child(3) {
+    background-color: red;
+    width: 15vw;
+    height: 30%;
+  }
+
+  .first .first_red div:nth-child(2) {
+    background-color: red;
+    width: 50vw;
+    height: 30%;
+  }
+
+  .first .first_orange {
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    height: 10vh;
+  }
+
+  .first .first_orange div {
+    width: 96%;
+    background: yellow;
+    height: 30%;
+  }
+  .second {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .second .second_blue {
+    background-color: gray;
+    width: 95%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* We put the wrap style to let elements wrap */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .second .second_blue .second_blue--dark {
+    background-color: blue;
+    width: 43vw;
+    height: 5vh;
+  }
+
+  .second .second_blue .second_blue--light {
+    background-color: aqua;
+    width: 90vw;
+    height: 5vh;
+  }
+
+  .second .second_red {
+    background-color: red;
+    width: 95%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .second .second_red div {
+    background-color: yellow;
+    width: 90vw;
+    height: 5vh;
+  }
+
+  .last {
+    height: 10vh;
+  }
 }
 
 /* We will use the concept of mobile first */
