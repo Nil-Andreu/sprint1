@@ -93,15 +93,24 @@
 
 .articles {
     background-color: rgb(212, 212, 212);
+    height: 50vh;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .articles .articles_card {
-    width: 40vw;
-    height: 30vh;
+    width: 47vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.articles .articles_card img {
+    object-fit: cover;
+    height: auto;
+    width: 47vw;
 }
