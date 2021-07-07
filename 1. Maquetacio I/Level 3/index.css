@@ -9,13 +9,15 @@
 }
 
 .navbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 100px;
   height: 100px;
-  flex-direction: row;
 }
 
 .navbar .navbar_img {
   width: 10vw;
+  height: 80px;
 }
 
 .navbar .navbar_img img {
@@ -27,30 +29,29 @@
 .navbar .navbar_text {
   width: 90vw;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 10vw);
+  align-content: center;
   margin-left: 100px;
 }
 
 .navbar .navbar_text .navbar_text--div {
   height: 80px;
-  width: 10vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20px auto;
+  margin: 0 10px 0 0;
   justify-content: center;
+  align-content: center;
 }
 
 .navbar .navbar_text .navbar_text--div img {
   width: 20px;
   height: auto;
-  margin: 0 10px 0 0;
 }
 
 .navbar .navbar_text .navbar_text--div a {
   height: 20px;
+  margin-left: 10px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
@@ -58,7 +59,6 @@
 
 .navbar .navbar_text .navbar_text--div a:hover {
   color: orange;
-  transform: scale(1.05);
 }
 
 .navbar .navbar_social {
@@ -69,9 +69,9 @@
   position: relative;
   width: 100vw;
   height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 50vh;
 }
 
 .img .img_image {
@@ -82,58 +82,57 @@
 }
 
 .img .img_title {
+  grid-column: 1/2;
+  grid-row: 1/2;
   position: absolute;
   width: 70%;
-  height: 30vh;
-  text-align: center;
-  top: 50%;
   color: rgba(255, 95, 2, 0.6);
+  align-self: center;
+  justify-self: center;
 }
 
 .articles {
   width: 100%;
   height: auto;
   background-color: rgb(212, 212, 212);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  grid-template-rows: 50vh;
+  gap: 3vw;
 }
 
 .articles .articles_card {
   width: 40vw;
   height: auto;
   background-color: azure;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 30% 70%;
   margin-top: 10px;
   min-width: 400px;
 }
 
 .articles .articles_card .articles_header {
-  height: 10vh;
-  width: 38vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
 }
 
 .articles .articles_card .articles_header .articles_header--date {
   color: rgba(212, 209, 209, 0.8);
   min-width: 300px;
   height: 5vh;
-  width: 38vw;
+  width: 100%;
   display: flex;
   align-items: flex-end;
 }
 
 .articles .articles_card .articles_header .articles_header--date p{
   margin-left: 10px;
-  width: 30vw;
+  width: 90%;
   height: 5vh;
   display: flex;
   align-items: flex-end;
@@ -150,11 +149,10 @@
 .articles .articles_card .articles_header .articles_header--title {
   background-color: rgb(216, 49, 49);
   min-width: 300px;
-
   text-transform: uppercase;
   color: white;
   height: 5vh;
-  width: 38vw;
+  width: 100%;
 }
 
 .articles .articles_card .articles_header .articles_header--title p {
@@ -172,6 +170,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
 } 
 
 .articles .articles_card .articles_text .articles_text--text {
