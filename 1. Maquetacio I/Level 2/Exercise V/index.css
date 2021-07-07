@@ -114,3 +114,15 @@
     height: auto;
     width: 47vw;
 }
+
+.articles .articles_card .articles_header .articles_header--date{
+
+}
+
+.articles .articles_card .articles_header .articles_header--date:first-child {
+    background-image: url('./img/pink-324175_640.jpg');
+}
+
+.articles .articles_card .articles_header .articles_header--date:last-child {
+    background-image: url('./img/sunrise-3712483_640.jpg');
+}
