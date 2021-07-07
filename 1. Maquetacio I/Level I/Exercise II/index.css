@@ -171,15 +171,12 @@
   }
 
   .second .second_blue .second_blue--light {
-    display: flex;
-    background-color: aqua;
     margin: 0 1rem 1rem 1rem;
     width: 58vw;
     height: 5vh;
   }
 
   .second .second_red div {
-    background-color: yellow;
     width: 90%;
     height: 10%;
   }
