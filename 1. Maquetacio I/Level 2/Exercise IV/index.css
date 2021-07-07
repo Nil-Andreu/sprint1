@@ -64,14 +64,13 @@
     width: 10vw;
 }
 
-/* Do web responsiveness
-@media ()
-*/
-
 .img {
     position: relative;
     width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img .img_image {
@@ -85,9 +84,8 @@
     position: absolute;
     width: auto;
     height: auto;
+    text-align: center;
     top: 50%;
-    left: 30%;
-    right: auto;
     color: rgba(255, 95, 2, 0.6)
 }
 
@@ -103,7 +101,7 @@
 }
 
 .articles .articles_card {
-    width: 47vw;
+    width: 44vw;
     height: 40vh;
     display: flex;
     justify-content: center;
@@ -112,5 +110,5 @@
 .articles .articles_card img {
     object-fit: cover;
     height: auto;
-    width: 47vw;
+    width: 44vw;
 }
