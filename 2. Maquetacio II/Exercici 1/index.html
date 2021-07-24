@@ -33,8 +33,6 @@
                 Sign In
             </button>
 
-
-
             <!--Where data toggle is which action is going to make, and data target to which id div is going to collapse-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbutton">
                 <span class="navbar-toggler-icon"></span>
@@ -42,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarbutton">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link">Who am I?</a>
+                        <a class="nav-link" href="#me">Who am I?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -138,6 +136,41 @@
             </div>
         </div>
     </div>
+
+    <section id="me">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 section_height ">
+                    <h1 class="align-middle">Hi, it's Nil!</h1>
+                    <p class="align-middle">I am learning software engineering by myself. I aspire to build great applications. I am also tatking a carreer of Business Administration at PomPeu Fabra, in the 4th year</p>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 section_height">
+                    <img src="./img/background.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio bg-dark">
+        <div class="container">
+            <div class="row text-center">
+                <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">This is my portfolio</h3>
+                <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Check the following images</p>
+            </div>
+            <div class="row ">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-dark carrousel">
+                    <div class="carousel slide" id="portfolio" data-ride="carousel"></div>
+
+                    <!--Indicators-->
+
+                    <!--Images itself-->
+
+                    <!--Controls left and right-->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!--For bootstrap with CDN-->
