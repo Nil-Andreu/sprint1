@@ -19,39 +19,39 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nil Andreu</a>
-
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="" width="30" height="24">
+            </a>
             <!--Button for modal, where is gonig to behave as a modal and the target of this is the login id-->
-            <button type="button" class="nav-item btn btn-link" href="#" data-toggle="modal" data-target="#login">
+            <button type="button" class=" btn btn-link" href="#" data-toggle="modal" data-target="#login">
                 LogIn
             </button>
 
-            <button type="button" class="nav-item btn btn-link" href="#" data-toggle="modal" data-target="#signin">
+            <button type="button" class=" btn btn-link" href="#" data-toggle="modal" data-target="#signin">
                 Sign In
             </button>
 
 
 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <!--Where data toggle is which action is going to make, and data target to which id div is going to collapse-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbutton">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarbutton">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Who am I?</a>
+                        <a class="nav-link">Who am I?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My portfolio</a>
+                        <a class="nav-link" href="#">Portfolio</a>
                     </li>
                 </ul>
             </div>
 
         </div>
+
     </nav>
 
     <!-- Modal Login -->
@@ -78,14 +78,23 @@
                 <!--Body of the modal-->
 
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="mb-3">
+                            <label for="logemail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="logemail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="logpassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
                 </div>
 
                 <!--Footer of the modal-->
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                 </div>
             </div>
         </div>
@@ -102,11 +111,29 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="mb-3">
+                            <label for="namesign" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="namesign">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailsign" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailsign" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordsign" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordsign">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remembersign">
+                            <label class="form-check-label" for="remembersign">Remember me</label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Sign me up!</button>
                 </div>
             </div>
         </div>
