@@ -16,9 +16,10 @@
   }
 }
 
-.carrousel {
+.portfolio_carousel {
     margin: 15vh 0;
-    height: auto;
+    height: 100vh;
 }
+
 
 

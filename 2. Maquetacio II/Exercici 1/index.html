@@ -142,7 +142,9 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 section_height ">
                     <h1 class="align-middle">Hi, it's Nil!</h1>
-                    <p class="align-middle">I am learning software engineering by myself. I aspire to build great applications. I am also tatking a carreer of Business Administration at PomPeu Fabra, in the 4th year</p>
+                    <p class="align-middle">I am learning software engineering by myself. I aspire to build great
+                        applications. I am also tatking a carreer of Business Administration at PomPeu Fabra, in the 4th
+                        year</p>
 
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 section_height">
@@ -152,25 +154,65 @@
         </div>
     </section>
 
-    <section id="portfolio bg-dark">
-        <div class="container">
+        <div class="container-fluid" id="#section">
             <div class="row text-center">
                 <h3 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">This is my portfolio</h3>
                 <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Check the following images</p>
-            </div>
-            <div class="row ">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-dark carrousel">
-                    <div class="carousel slide" id="portfolio" data-ride="carousel"></div>
 
-                    <!--Indicators-->
+                <div class="row">
 
-                    <!--Images itself-->
+                    <div class="carousel slide col" id="portfolio" data-ride="carousel">
 
-                    <!--Controls left and right-->
+                        <!--Indicators-->
+                        <ul class="carousel-indicators">
+                            <li data-target="portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="portfolio" data-slide-to="1"></li>
+                            <li data-target="portfolio" data-slide-to="2"></li>
+                            <li data-target="portfolio" data-slide-to="3"></li>
+                        </ul>
+                        <!--Images itself-->
+                        <div class="carousel-inner">
+
+                            <!--Item for each image-->
+                            <div class="carousel-item active">
+                                <!--We put fluid image as we want to adapt the image to the width of viewport-->
+                                <img src="./img/portfolio1.jpg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <p>Statistics dashboard</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio2.jpg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <p>Statistics dashboard</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio3.jpg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <p>Statistics dashboard</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/portfolio4.jpg" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <p>Statistics dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Controls left and right-->
+                        <a href="#portfolio" class="carousel-control-prev left" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span></a>
+
+                        <a href="#portfolio" class="carousel-control-next right" data-slide="next">
+                            <span class="carousel-control-next-icon"></span></a>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-    </section>
 
 
     <!--For bootstrap with CDN-->
